@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj = {
+        name:'娃哈哈'
+    }
+
+    function test (  ) {
+        console.log ( "哈哈哈" )
+        console.log ( this );//此时this指的是window
+    }
+
+    //修改函数中this 的指向.
+    var fn = text.bind(obj);//不会执行test函数. 只会返回一个修改了this和test函数一样的函数
+    console.log ( fn )
+    fn();
+
+</script>
+</body>
+</html>

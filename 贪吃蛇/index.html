@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>标题</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #cccccc;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="map" id="map"></div>
+<script src="Food.js"></script>
+<script src="Snake.js"></script>
+<script src="Game.js"></script>
+<script>
+
+    //获取地图
+    var map = document.getElementById ( "map" )
+
+    //实例化一个游戏控制器对象
+    var game1 = new Game(map);
+    //调用游戏控制器开始游戏的方法
+    game1.start();
+
+
+</script>
+</body>
+</html>
